@@ -1,0 +1,16 @@
+npm init -y  // for creating package.json file
+npm i -D nodemon
+
+for creating ch2 folder: command: npx express-generator --view=ejs ch2
+// npm install express
+npm install: it will install all dependencies
+
+
+
+import express from 'express';
+const app = express();
+const port=process.env.PORT || 3000;
+
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
+});
